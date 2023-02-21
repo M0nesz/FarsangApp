@@ -2,20 +2,22 @@ package com.example.farsangapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 public class QuizzFirstactivity extends AppCompatActivity {
     boolean farsangFarkaChecked;
     boolean rioiKarnevalChecked;
     boolean mohacsiBusojarasChecked;
 
-
+    public void openLeirasKettoActivity(){
+        Intent intent = new Intent(QuizzFirstactivity.this, LeirasKettoActivity.class);
+        startActivity(intent);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,22 +30,39 @@ public class QuizzFirstactivity extends AppCompatActivity {
         TextView errorText = findViewById(R.id.error);
         errorText.setVisibility(View.INVISIBLE);
 
-
         nextButton.setOnClickListener(view ->{
-        if (farsangFarka.isChecked()){
+
+        if (farsangFarka.isChecked() && rioiKarneval.isChecked() && mohacsiBusojaras.isChecked() ){
             farsangFarkaChecked = true;
+            rioiKarnevalChecked = true;
+            mohacsiBusojarasChecked = true;
+            openLeirasKettoActivity();
+        } else if (farsangFarka.isChecked() && mohacsiBusojaras.isChecked() ) {
+            farsangFarkaChecked = true;
+            mohacsiBusojarasChecked = true;
+            openLeirasKettoActivity();
+        } else if (rioiKarneval.isChecked() && mohacsiBusojaras.isChecked()) {
+            rioiKarnevalChecked = true;
+            mohacsiBusojarasChecked = true;
+            openLeirasKettoActivity();
+        } else if (farsangFarka.isChecked() && rioiKarneval.isChecked()) {
+            rioiKarnevalChecked = true;
+            farsangFarkaChecked = true;
+            openLeirasKettoActivity();
+        } else if (farsangFarka.isChecked()) {
+            farsangFarkaChecked = true;
+            openLeirasKettoActivity();
         } else if (rioiKarneval.isChecked()) {
             rioiKarnevalChecked = true;
+            openLeirasKettoActivity();
         } else if (mohacsiBusojaras.isChecked()) {
             mohacsiBusojarasChecked = true;
-        }
-        else{
+            openLeirasKettoActivity();
+        } else {
             errorText.setVisibility(View.VISIBLE);
             farsangFarkaChecked = false;
             rioiKarnevalChecked = false;
             mohacsiBusojarasChecked = false;
-        }
-        });
-
+        }});
     }
 }
