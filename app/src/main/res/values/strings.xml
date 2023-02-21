@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">FarsangApp</string>
+    <string name="farsang">Farsang</string>
+    <string name="button">Button</string>
 </resources>
