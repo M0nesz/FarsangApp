@@ -27,6 +27,9 @@
         <activity android:name=".ThirdQuestion"></activity>
         <activity android:name=".LeirasThird"></activity>
         <activity android:name=".FourthQuestion"></activity>
+        <activity android:name=".FifthQuestion"></activity>
+        <activity android:name=".FinalPage"></activity>
+
 
 
         <meta-data
