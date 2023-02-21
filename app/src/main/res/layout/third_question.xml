@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/aclonica"
-        android:text="Első kérdés"
+        android:text="Harmadik kérdés"
         android:textColor="@color/texts"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,10 +24,10 @@
         app:layout_constraintVertical_bias="0.042" />
 
     <CheckBox
-        android:id="@+id/farsang_farka"
+        android:id="@+id/levendula"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Farsang farka"
+        android:text="Levendula"
         android:textColor="@color/texts"
         android:fontFamily="@font/aclonica"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -38,10 +38,10 @@
         app:layout_constraintVertical_bias="0.24" />
 
     <CheckBox
-        android:id="@+id/rioi_karneval"
+        android:id="@+id/bokreta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Riói karnevál"
+        android:text="Bokréta"
         android:textColor="@color/texts"
         android:fontFamily="@font/aclonica"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -52,10 +52,10 @@
         app:layout_constraintVertical_bias="0.31" />
 
     <CheckBox
-        android:id="@+id/mohacsi_busojaras"
+        android:id="@+id/kalacs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mohácsi busójárás"
+        android:text="Bokréta"
         android:textColor="@color/texts"
         android:fontFamily="@font/aclonica"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -70,7 +70,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/aclonica"
-        android:text="@string/question_1"
+        android:text="Hogy hívják azt amit a fiúk a kalapjukra tűznek Farsang vasárnap"
         android:textColor="@color/texts"
         android:textSize="16sp"
         android:padding="10dp"

@@ -15,7 +15,7 @@ public class QuizzFirstactivity extends AppCompatActivity {
     boolean mohacsiBusojarasChecked;
 
     public void openLeirasKettoActivity(){
-        Intent intent = new Intent(QuizzFirstactivity.this, LeirasKettoActivity.class);
+        Intent intent = new Intent(QuizzFirstactivity.this, SecondQuestion.class);
         startActivity(intent);
     }
 

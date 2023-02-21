@@ -15,7 +15,7 @@ public class LeirasActivity extends AppCompatActivity {
 
         Button start_Button = findViewById(R.id.next);
         start_Button.setOnClickListener(view ->{
-            Intent intent = new Intent(LeirasActivity.this, QuizzFirstactivity.class);
+            Intent intent = new Intent(LeirasActivity.this, LeirasKettoActivity.class);
             startActivity(intent);
         });
     }

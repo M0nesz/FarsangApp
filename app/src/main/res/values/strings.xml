@@ -2,9 +2,29 @@
     <string name="app_name">FarsangApp</string>
     <string name="farsang">Farsang</string>
     <string name="button">Button</string>
-    <string name="page_1">A farsang a vízkereszttől (január 6.) húshagyókedd éjfélig, a hamvazószerdával kezdődő nagyböjtig (a húsvétot megelőző 47. napig) tartó időszak elnevezése. Hagyományosan a vidám lakodalmak, bálok, mulatságok, népünnepélyek jellemzik. \n A farsang jellegzetessége, hogy a keresztény liturgikus naptárban nem kötődik hozzá jelentős vallási ünnep, alapvetően a gazdag néphagyományokra épül (lásd: torkos csütörtök). A kereszténység előtti időkből származó farsangi mulatságokat az „erkölcsös” 16. és 17. században nem eredete, hanem bujaságot szimbolizáló szokásai miatt tiltották.</string>
+    <string name="page_1">A farsang a vízkereszttől (január 6.) húshagyókedd éjfélig, a hamvazószerdával kezdődő nagyböjtig (a húsvétot megelőző 47. napig) tartó időszak elnevezése.
+        Hagyományosan a vidám lakodalmak, bálok, mulatságok, népünnepélyek jellemzik.
+        \n
+        \n A farsang jellegzetessége, hogy a keresztény liturgikus naptárban nem kötődik hozzá jelentős vallási ünnep, alapvetően a gazdag néphagyományokra épül (lásd: torkos csütörtök).
+        \n
+        </string>
     <string name="question_1">Mi Magyarország legnevezetesebb farsangi eseménye?</string>
     <string name="tov_bb">Tovább</string>
-    <string name="leiras_2">A farsangvasárnap a farsangi időszak végén lévő farsang farkának első napja. \n Számos helyen ezen a napon tűzték a legények kalapjukra a kiválasztott lányok bokrétáját. \n További elnevezései: csonthagyóvasárnap, ötvenedvasárnap, sonkahagyóvasárnap, hathagyóvasárnap, kilencben hagyó harmad vasárnap, piroskavasárnap (piroska nevű kalács után), vővasárnap (az ifjú férj a lány családjának kontójára mulatott), sardóvasárnap (sodrózás jelentése szerencsekívánás), vajhagyóvasárnap (görögkatolikusoknál). \n Hétfő a farsang farkának középső napja.</string>
+    <string name="leiras_2">A farsangvasárnap a farsangi időszak végén lévő farsang farkának első napja.
+        \n
+        \n Számos helyen ezen a napon tűzték a legények kalapjukra a kiválasztott lányok bokrétáját.
+        \n
+        \n További elnevezései: csonthagyóvasárnap, ötvenedvasárnap, sonkahagyóvasárnap, hathagyóvasárnap, kilencben hagyó harmad vasárnap, piroskavasárnap, vővasárnap, sardóvasárnap, vajhagyóvasárnap.
+        \n
+        \n Hétfő a farsang farkának középső napja.</string>
     <string name="farsang_vas_rnap">Farsang vasárnap</string>
+    <string name="hushagyokedd">
+        A húshagyókedd, a farsang és egyben a farsang farkának utolsó napja.
+        Mozgó egyházi ünnep, mindig 47 nappal előzi meg a húsvétot.
+        A farsangtemetés időpontja.
+        Ezen a napon általában szalmabábut (kisze) vagy koporsót égettek, jelképesen lezárták a farsangot és a telet.
+        \n
+\n A húshagyókeddet követi a hamvazószerda, amely a 40 napos nagyböjt kezdete.
+        A keresztények ilyenkor nem esznek húst és befejezik a mulatozásokat, böjtölnek 40 napig, húsvét vasárnapjáig
+</string>
 </resources>
