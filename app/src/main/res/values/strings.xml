@@ -2,4 +2,7 @@
     <string name="app_name">FarsangApp</string>
     <string name="farsang">Farsang</string>
     <string name="button">Button</string>
+    <string name="page_1">A farsang a vízkereszttől (január 6.) húshagyókedd éjfélig, a hamvazószerdával kezdődő nagyböjtig (a húsvétot megelőző 47. napig) tartó időszak elnevezése. Hagyományosan a vidám lakodalmak, bálok, mulatságok, népünnepélyek jellemzik. \n A farsang jellegzetessége, hogy a keresztény liturgikus naptárban nem kötődik hozzá jelentős vallási ünnep, alapvetően a gazdag néphagyományokra épül (lásd: torkos csütörtök). A kereszténység előtti időkből származó farsangi mulatságokat az „erkölcsös” 16. és 17. században nem eredete, hanem bujaságot szimbolizáló szokásai miatt tiltották.</string>
+    <string name="question_1">Mi Magyarország legnevezetesebb farsangi eseménye?</string>
+    <string name="tov_bb">Tovább</string>
 </resources>
