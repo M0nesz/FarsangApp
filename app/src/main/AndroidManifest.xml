@@ -21,11 +21,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".LeirasActivity"></activity>
-        <activity android:name=".QuizzFirstactivity"></activity>
+        <activity android:name=".FirstQuestion"></activity>
         <activity android:name=".LeirasKettoActivity"></activity>
         <activity android:name=".SecondQuestion"></activity>
         <activity android:name=".ThirdQuestion"></activity>
         <activity android:name=".LeirasThird"></activity>
+        <activity android:name=".FourthQuestion"></activity>
+
 
         <meta-data
             android:name="preloaded_fonts"

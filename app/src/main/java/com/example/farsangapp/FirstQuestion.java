@@ -9,13 +9,13 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
-public class QuizzFirstactivity extends AppCompatActivity {
+public class FirstQuestion extends AppCompatActivity {
     boolean farsangFarkaChecked;
     boolean rioiKarnevalChecked;
     boolean mohacsiBusojarasChecked;
 
     public void openLeirasKettoActivity(){
-        Intent intent = new Intent(QuizzFirstactivity.this, SecondQuestion.class);
+        Intent intent = new Intent(FirstQuestion.this, SecondQuestion.class);
         startActivity(intent);
     }
 

@@ -23,41 +23,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.042" />
 
-    <CheckBox
-        android:id="@+id/nem"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Igen"
-        android:textColor="@color/texts"
-        android:fontFamily="@font/aclonica"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.054"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.24" />
-
-    <CheckBox
-        android:id="@+id/igen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nem"
-        android:textColor="@color/texts"
-        android:fontFamily="@font/aclonica"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.053"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.31" />
-
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/aclonica"
         android:padding="10dp"
-        android:text="Vallási ünnep-e a Farsang?"
+        android:text="Hogy hívják a szalmabábút amit Húshagyókedden készítenek? "
         android:textColor="@color/texts"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -99,21 +71,24 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.447" />
 
-    <TextView
-        android:id="@+id/error2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+
+    <EditText
+        android:id="@+id/valasz"
+        android:layout_width="135dp"
+        android:layout_height="42dp"
+        android:background="@drawable/line"
+        android:ems="10"
         android:fontFamily="@font/aclonica"
+        android:inputType="textPersonName"
         android:padding="10dp"
-        android:text="Csak egyet jelölj be!"
-        android:textColor="@color/pink"
-        android:textSize="16sp"
+        android:text="Válasz"
+        android:textColor="@color/texts"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.039"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.406" />
+        app:layout_constraintVertical_bias="0.278" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
