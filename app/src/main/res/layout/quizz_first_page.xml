@@ -24,10 +24,12 @@
         app:layout_constraintVertical_bias="0.042" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/farsang_farka"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Farsang farka"
+        android:textColor="@color/texts"
+        android:fontFamily="@font/aclonica"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.054"
@@ -36,10 +38,12 @@
         app:layout_constraintVertical_bias="0.24" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/rioi_karneval"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Riói karnevál"
+        android:textColor="@color/texts"
+        android:fontFamily="@font/aclonica"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.053"
@@ -48,10 +52,12 @@
         app:layout_constraintVertical_bias="0.31" />
 
     <CheckBox
-        android:id="@+id/checkBox4"
+        android:id="@+id/mohacsi_busojaras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mohácsi busójárás"
+        android:textColor="@color/texts"
+        android:fontFamily="@font/aclonica"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.061"
@@ -89,7 +95,23 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.576" />
+        app:layout_constraintVertical_bias="0.597"  />
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:padding="10dp"
+        android:text="Legalább egyet jelölj be!"
+        android:textColor="@color/pink"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.447" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
