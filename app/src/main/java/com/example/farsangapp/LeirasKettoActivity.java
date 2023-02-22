@@ -19,5 +19,10 @@ public class LeirasKettoActivity extends AppCompatActivity {
             Intent intent = new Intent(LeirasKettoActivity.this, LeirasThird.class);
             startActivity(intent);
         });
+        Button vissza_Button = findViewById(R.id.vissza);
+        vissza_Button.setOnClickListener(view ->{
+            Intent intent = new Intent(LeirasKettoActivity.this, LeirasActivity.class);
+            startActivity(intent);
+        });
     }
 }

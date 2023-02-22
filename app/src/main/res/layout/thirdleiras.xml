@@ -43,17 +43,33 @@
         android:id="@+id/next"
         android:layout_width="204dp"
         android:layout_height="117dp"
-        android:background="@drawable/button"
-        android:textColor="@color/texts"
-        android:text="@string/tov_bb"
-        android:textSize="23dp"
+        android:background="@drawable/tovabb_gomb"
         android:fontFamily="@font/aclonica"
+        android:text=""
+        android:textColor="@color/texts"
+        android:textSize="23dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.597" />
+        app:layout_constraintVertical_bias="0.597"  />
+
+    <android.widget.Button
+        android:id="@+id/vissza"
+        android:layout_width="204dp"
+        android:layout_height="117dp"
+        android:background="@drawable/vissza_gomb"
+        android:fontFamily="@font/aclonica"
+        android:text=""
+        android:textColor="@color/texts"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.748" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
