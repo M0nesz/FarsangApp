@@ -2,6 +2,7 @@ package com.example.farsangapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,15 +10,28 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
+import java.io.FileOutputStream;
+import java.io.IOException;
+
 
 public class SecondQuestion extends AppCompatActivity {
     boolean levendulaChecked;
     boolean bokretaChecked;
     boolean kalacsChecked;
+    String filename = "secondquestion";
+
     public void openThirdQuestionActivity(){
         Intent intent = new Intent(SecondQuestion.this, ThirdQuestion.class);
         startActivity(intent);
+        try (FileOutputStream fos = openFileOutput(filename, Context.MODE_PRIVATE)) {
+            String data = levendulaChecked + "," + bokretaChecked + "," + kalacsChecked;
+            fos.write(data.getBytes());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,4 +78,5 @@ public class SecondQuestion extends AppCompatActivity {
                 kalacsChecked = false;
             }});
     }
+
 }

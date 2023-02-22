@@ -2,23 +2,42 @@ package com.example.farsangapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 public class FirstQuestion extends AppCompatActivity {
     boolean farsangFarkaChecked;
     boolean rioiKarnevalChecked;
     boolean mohacsiBusojarasChecked;
 
+
     public void openLeirasKettoActivity(){
         Intent intent = new Intent(FirstQuestion.this, SecondQuestion.class);
         startActivity(intent);
-    }
+        try (FileOutputStream fos = openFileOutput(filename, Context.MODE_PRIVATE)) {
+            String data = farsangFarkaChecked + "," + rioiKarnevalChecked + "," + mohacsiBusojarasChecked;
+            Log.e("FirstQuestion", "data = " + data);
+            fos.write(data.getBytes());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Log.e("FirstQuestion", "farsangFarkaChecked = " + farsangFarkaChecked);
+        Log.e("FirstQuestion", "rioiKarnevalChecked = " + rioiKarnevalChecked);
+        Log.e("FirstQuestion", "mohacsiBusojarasChecked = " + mohacsiBusojarasChecked);
 
+
+
+    }
+    String filename = "firstquestion";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,6 +82,14 @@ public class FirstQuestion extends AppCompatActivity {
             farsangFarkaChecked = false;
             rioiKarnevalChecked = false;
             mohacsiBusojarasChecked = false;
-        }});
+        }
+
+
+
+
+        });
+
+
     }
+
 }

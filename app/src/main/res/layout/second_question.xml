@@ -70,7 +70,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/aclonica"
-        android:text="Hogy hívják azt amit a fiúk a kalapjukra tűznek Farsang vasárnap"
+        android:text="Hogy hívják azt amit a fiúk a kalapjukra tűznek Farsang vasárnap?"
         android:textColor="@color/texts"
         android:textSize="16sp"
         android:padding="10dp"

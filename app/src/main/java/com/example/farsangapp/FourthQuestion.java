@@ -2,6 +2,7 @@ package com.example.farsangapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -11,8 +12,13 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.io.FileOutputStream;
+import java.io.IOException;
+
 public class FourthQuestion extends AppCompatActivity {
 
+    String userinputonFourth;
+    String filename = "fourthquestion";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +31,7 @@ public class FourthQuestion extends AppCompatActivity {
 
         nextButton.setOnClickListener(view->{
             Log.d("FourthQuestion", "Tovább gomb lenyomva");
-            String userinputonFourth = String.valueOf(valasz.getText());
+            userinputonFourth = String.valueOf(valasz.getText());
             Log.d("FourthQuestion", "userimput= "+ userinputonFourth);
 
             if (!userinputonFourth.equals("")){
@@ -33,6 +39,13 @@ public class FourthQuestion extends AppCompatActivity {
                     if (userinputonFourth.length()<15){
                         Intent intent = new Intent(FourthQuestion.this, FifthQuestion.class);
                         startActivity(intent);
+                        try (FileOutputStream fos = openFileOutput(filename, Context.MODE_PRIVATE)) {
+                            String data = userinputonFourth;
+                            fos.write(data.getBytes());
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+
                     }else{
                         error.setText("Válasz nem lehet hosszabb mint 15 karakter!");
                         error.setVisibility(View.VISIBLE);

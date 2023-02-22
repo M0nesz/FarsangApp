@@ -2,6 +2,7 @@ package com.example.farsangapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -10,13 +11,24 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
+import java.io.FileOutputStream;
+import java.io.IOException;
+
 
 public class ThirdQuestion extends AppCompatActivity {
     boolean igenIsChecked;
     boolean nemIsChecked;
+    String filename = "thirdquestion";
+
     public void openNextQuestionActivity(){
         Intent intent = new Intent(ThirdQuestion.this, FourthQuestion.class);
         startActivity(intent);
+        try (FileOutputStream fos = openFileOutput(filename, Context.MODE_PRIVATE)) {
+            String data = igenIsChecked + "," + nemIsChecked;
+            fos.write(data.getBytes());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
